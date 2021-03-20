@@ -14,6 +14,8 @@ colsum = apply(RNmat,2,sum)
 #check for normality
 jarque.bera.test(colsum)
 
+Box.test(x = colsum,lag = 8,type = c("Ljung-Box"))
+
 source("function.r")
 
 
